@@ -6,10 +6,19 @@
 		<link href="css/styles.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
-		<div class="container">
+		<div class="container" id="normalDiv" style="display: block;">
 			<h1>Personal Bio</h1>
 			<p class="top-p">As you've probably realized, I am Derek Ludwig. I've lived in the Toledo area for my whole life and entered the Engineering College at the University of Toledo majoring in Electrical Engineering Technology and Computer Science & Engineering Technology. I'm also active in the UT student sections of the Association for Computing Machinery (ACM) and the Institute of Electrical and Electronics Engineers (IEEE).</p>
 			<p class="top-p">I enjoy programming and electronics projects, both for classes and recreationally. While I have made some simple web pages before, I expect this Web Design class to be much more challenging and rewarding.</p>
+			<p class="top-p">If you happen to be browsing this at work, and your boss walks by, click the button below to switch to a page full of technical-looking jargon so you look busy. Click it again to return here.</p>
+			<button onclick="toggle('normalDiv');toggle('emergencyDiv');">OK</button>
+			<p class="bot-p">Return to main page: <a href="index.html">Home</a></p>
+		</div>
+		<div class="container" id="emergencyDiv" style="display: none;">
+			<h1>Deconstructing SMPs</h1>
+			<p class="top-p"> Symmetric encryption  must work. After years of practical research into simulated annealing, we demonstrate the exploration of scatter/gather I/O, which embodies the typical principles of cryptoanalysis. In order to accomplish this purpose, we verify not only that hash tables  and SMPs  can cooperate to answer this grand challenge, but that the same is true for randomized algorithms.</p>
+
+			<button onclick="toggle('normalDiv');toggle('emergencyDiv');">OK</button>
 			<p class="bot-p">Return to main page: <a href="index.html">Home</a></p>
 		</div>
 	</body>
